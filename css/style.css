@@ -1,0 +1,103 @@
+@import url('fonts.css');
+
+/*-------------------------MAIN SETTINGS---------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../img/bg.png') no-repeat center top;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.clear-fix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------------------MOBILE FIRST!!!(320px to 480px)---------------------------*/
+
+/*---------------------------LOGO----------------------------------*/
+.logo {
+    text-align: center;
+}
+
+.logo__text {
+    font: 48px  League Gothic Regular, sans-serif;
+    color: #fff;
+    text-shadow: 0 1px 1px #3d3639;
+}
+
+.logo__text::after {
+    content:'';
+    display: inline-block;
+    background: url('../img/ER-logo.png') no-repeat;
+    width: 29px;
+    height: 36px;
+    margin-left: 2px;
+}
+
+/*---------------------------DROP-DOWN NAVIGATION----------------------------------*/
+
+.menu {
+    text-align: center;
+    width: 245px;
+    background: rgba(54, 41, 62, 0.8);
+    margin: auto;
+    border-radius: 9px;
+    border: 1px solid #051116;
+    display: none;
+}
+
+.menu__item {
+    list-style: none;
+    border-bottom: 1px solid #36283e;
+    border-top: 1px solid #503d58;
+}
+
+.menu__link {
+    font: 24px League Gothic Regular, sans-serif;
+    color: #fff;
+    display: block;
+    padding: 2px 0 9px;
+}
+
+.menu__item:first-child {
+    border-top: none;
+    display: list-item;
+}
+
+.menu__item:last-child {
+    border-bottom: none;
+}
+
+/* Link modifier - LIGHTED LINK */
+.menu__link_lighted {
+    margin: 7px auto 4px;
+    width: 48px;
+    text-shadow: 0 0 3px #fff;
+    padding: 3px 0 2px;
+    border-bottom: 3px solid #edbfff;
+}
+
+/* Link modifier - MORE OPACITY AND UNDERLINE LINK */
+.menu__link_opacity {
+    background: rgba(54, 41, 62, 0.9);
+    border-bottom: 2px solid #edbfff;
+    padding: 2px 0 7px;
+}
+.hover-link:active > .menu {
+    display: block;
+}
