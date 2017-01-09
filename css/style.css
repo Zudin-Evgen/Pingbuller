@@ -32,6 +32,7 @@ a {
 /*---------------------------LOGO----------------------------------*/
 .logo {
     text-align: center;
+    margin-top: 70px;
 }
 
 .logo__text {
@@ -41,7 +42,7 @@ a {
 }
 
 .logo__text::after {
-    content:'';
+    content: '';
     display: inline-block;
     background: url('../img/ER-logo.png') no-repeat;
     width: 29px;
@@ -50,8 +51,26 @@ a {
 }
 
 /*---------------------------DROP-DOWN NAVIGATION----------------------------------*/
+.dropdown-menu__button {
+    text-align: center;
+    position: relative;
+    font: 24px League Gothic Regular, sans-serif;
+    color: #fff;
+    display: block;
+    width: 48px;
+    padding: 3px 0 2px;
+    margin: auto;
+    border-bottom: 3px solid #edbfff;
+}
+
+.dropdown-menu__button:hover > .menu {
+    display: block;
+}
 
 .menu {
+    position: absolute;
+    top: -8px;
+    left: -98px;
     text-align: center;
     width: 245px;
     background: rgba(54, 41, 62, 0.8);
@@ -76,7 +95,6 @@ a {
 
 .menu__item:first-child {
     border-top: none;
-    display: list-item;
 }
 
 .menu__item:last-child {
@@ -98,6 +116,50 @@ a {
     border-bottom: 2px solid #edbfff;
     padding: 2px 0 7px;
 }
-.hover-link:active > .menu {
-    display: block;
+
+/*---------------------------SLIDER----------------------------------*/
+
+.slider {
+    width: 320px;
+    margin: auto;
+}
+
+.slider__main-slogan {
+    color: #fefefe;
+    font: 36px League Gothic Regular, sans-serif;
+}
+
+.slider__slogan {
+    color: #edbfff;
+    font: 18px League Gothic Regular, sans-serif;
+}
+
+.slider__text {
+    font: 16px MariadPro Regular, sans-serif;
+    display: none;
+}
+
+.slider__nav-row {
+    text-align: center;
+}
+
+.slider__nav {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+.slider__circle {
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0; top: 0;
+    margin: auto;
+    background: linear-gradient(#fff, #bbb9ba);
+    border: 1px solid #fff;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
 }
