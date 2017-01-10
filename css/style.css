@@ -94,7 +94,7 @@ nav {
     left: -98px;
     text-align: center;
     width: 245px;
-    background: rgba(54, 41, 62, 0.8);
+    background: rgba(54, 41, 62, 0.9);
     margin: auto;
     border-radius: 9px;
     border: 1px solid #051116;
@@ -207,9 +207,9 @@ nav {
 }
 
 .about__icon {
-    background: url('../img/about_icon.png') no-repeat;
+    background: url('../img/about-icons.png') no-repeat 0 0;
     height: 25px;
-    width: 24px;
+    width: 28px;
     margin-top: 7px;
     float: left;
 }
@@ -243,4 +243,52 @@ nav {
 
 .about__link_lighted {
     text-shadow: 0 0 2px #fff;
+}
+
+/*---------------------------CLIENTS - SECTION ----------------------------------*/
+.clients {
+    width: 256px;
+    box-shadow: 0 1px 1px #D2D2D2;
+    margin: auto;
+    padding: 27px 37px 32px;
+    position: relative;
+}
+
+.clients__photo {
+    background: url('../img/client-photo.png') no-repeat;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: -26px;
+    top: 20px;
+}
+
+.clients__header {
+    font: 24px League Gothic Regular, sans-serif;
+    color: #454545;
+}
+
+.clients__header_pink {
+    color: #edbfff;
+    display: block;
+}
+
+.clients__text {
+    font: 16px 'Open Sans Light';
+    color: #454545;
+}
+
+/* Slider modifiers - for clients section */
+.slider__nav_white {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+.slider__nav_black {
+    background: linear-gradient(#8a8a8a, #464646);
+    border: 1px solid #6f6f6f;
+}
+
+.clients__nav-row {
+    text-align: center;
 }
