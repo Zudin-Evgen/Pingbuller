@@ -12,6 +12,10 @@ body {
     background: url('../img/bg.png') no-repeat center top;
 }
 
+main {
+    background: url('../img/bg-main.png') repeat;
+}
+
 input, textarea {
     width: 100%;
 }
@@ -53,7 +57,7 @@ a {
 }
 
 .logo__text {
-    font: 48px  League Gothic Regular, sans-serif;
+    font: 48px  "League Gothic Regular", Arial, sans-serif;
     color: #fff;
     text-shadow: 0 1px 1px #3d3639;
 }
@@ -75,7 +79,7 @@ nav {
 .dropdown-menu__button {
     text-align: center;
     position: relative;
-    font: 24px League Gothic Regular, sans-serif;
+    font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #fff;
     display: block;
     width: 48px;
@@ -108,7 +112,7 @@ nav {
 }
 
 .menu__link {
-    font: 24px League Gothic Regular, sans-serif;
+    font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #fff;
     display: block;
     padding: 2px 0 9px;
@@ -148,12 +152,12 @@ nav {
 
 .slider__main-slogan {
     color: #fefefe;
-    font: 36px League Gothic Regular, sans-serif;
+    font: 36px "League Gothic Regular", Arial, sans-serif;
 }
 
 .slider__slogan {
     color: #edbfff;
-    font: 18px League Gothic Regular, sans-serif;
+    font: 18px "League Gothic Regular", Arial, sans-serif;
 }
 
 .slider__text {
@@ -162,7 +166,7 @@ nav {
 }
 
 .slider__nav-row {
-    margin-top: 74px;
+    margin-top: 73px;
     text-align: center;
 }
 
@@ -170,8 +174,8 @@ nav {
     position: relative;
     display: inline-block;
     margin: 0 2px 0 1px;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
     background: rgba(0,0,0,0.3);
 }
@@ -183,18 +187,17 @@ nav {
     margin: auto;
     background: linear-gradient(#fff, #bbb9ba);
     border: 1px solid #fff;
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
 }
-
 /*---------------------------ABOUT - SECTION ----------------------------------*/
 .about {
     margin-top: 65px;
-    padding: 67px 0 41px;
+    padding: 67px 0 43px;
     border: 1px solid #35273c;
     background: linear-gradient(#755284, #36293d);
-    box-shadow: 0 1px 2px #fff;
+    box-shadow: 0 2px 15px #989d9d;
 }
 
 .about__item {
@@ -202,8 +205,8 @@ nav {
     margin: 0 auto 20px;
 }
 
-.about__item-lower {
-    margin-top: 34px;
+.about__item_lower {
+    margin-top: 36px;
 }
 
 .about__icon {
@@ -220,16 +223,18 @@ nav {
 }
 
 .about__header {
-    font: 24px League Gothic Regular, sans-serif;
+    font: 24px "League Gothic Regular", Arial, sans-serif;
     text-shadow: 1px 1px #000;
     color: #fff;
 }
 
 .about__description {
-    font: 16px 'Open Sans Light', Tahoma, sans-serif;
+    font: 16px 'Open Sans Light', Arial, sans-serif;
     text-shadow: 1px 1px #000;
     color: #fff;
     line-height: 25px;
+    height: 74px;
+    overflow: hidden;
 }
 
 .about__link {
@@ -238,7 +243,7 @@ nav {
     text-align: right;
     color: #fff;
     text-shadow: 1px 1px #000;
-    font: 18px League Gothic Regular, sans-serif;
+    font: 18px "League Gothic Regular", Arial, sans-serif;
 }
 
 .about__link_lighted {
@@ -249,9 +254,10 @@ nav {
 .clients {
     width: 256px;
     box-shadow: 0 1px 1px #D2D2D2;
-    margin: auto;
-    padding: 27px 37px 32px;
+    margin: 70px 0 0 558px;
+    padding: 22px 35px 34px;
     position: relative;
+    background: #fff;
 }
 
 .clients__photo {
@@ -259,36 +265,122 @@ nav {
     width: 49px;
     height: 49px;
     position: absolute;
-    left: -26px;
-    top: 20px;
+    left: -24px;
+    top: 18px;
 }
 
 .clients__header {
-    font: 24px League Gothic Regular, sans-serif;
+    font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #454545;
+    margin-bottom: -4px;
 }
 
 .clients__header_pink {
+    font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #edbfff;
-    display: block;
 }
 
 .clients__text {
-    font: 16px 'Open Sans Light';
+    font: 16px 'Open Sans Light', Arial, sans-serif;
     color: #454545;
-}
-
-/* Slider modifiers - for clients section */
-.slider__nav_white {
-    background: #fff;
-    border: 1px solid #e2e2e2;
-}
-
-.slider__nav_black {
-    background: linear-gradient(#8a8a8a, #464646);
-    border: 1px solid #6f6f6f;
+    overflow: hidden;
+    margin-left: 3px;
+    height: 162px;
+    line-height: 24px;
 }
 
 .clients__nav-row {
-    text-align: center;
+    margin: 23px 0 0 655px;
+}
+
+.clients__nav {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e9efef;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.clients__nav-circle {
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0; top: 0;
+    margin: auto;
+    background: linear-gradient(#8a8a8a, #464646);
+    border: 1px solid #6f6f6f;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+/*---------------------------RESENT UPDATES ----------------------------------*/
+.updates {
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 40px;
+}
+
+.updates__wrapper {
+    width: 285px;
+    margin: auto;
+}
+
+.updates__article {
+    margin: 0 auto 19px;
+    padding-left: 4px;
+}
+
+.updates__article_lower {
+    margin-top: 24px;
+}
+
+.updates__header {
+    font: 30px "League Gothic Regular", Arial, sans-serif;
+    color: #454545;
+    margin-bottom: 13px;
+}
+
+.updates__wrap {
+    padding-left: 63px;
+}
+
+.updates__icon1 {
+    background: url('../img/updates-icons.png') no-repeat -114px -7px;
+    height: 47px;
+    width: 47px;
+    float: left;
+    border-radius: 100%;
+}
+
+.updates__icon2 {
+    background: url('../img/updates-icons.png') no-repeat -114px -72px;
+    height: 47px;
+    width: 47px;
+    float: left;
+    border-radius: 100%;
+}
+
+.updates__icon3 {
+    background: url('../img/updates-icons.png') no-repeat;
+    height: 47px;
+    width: 47px;
+    float: left;
+    border-radius: 100%;
+}
+
+
+.updates__topic {
+    font: 16px 'Open Sans Extrabold', Arial, sans-serif;
+    color: #454545;
+}
+
+.updates__posted {
+    font: 16px 'Open Sans Light', Arial, sans-serif;
+    color: #454545;
+}
+
+.updates__more {
+    font: 19px "League Gothic Regular", Arial, sans-serif;
+    color: #454545;
+
 }
