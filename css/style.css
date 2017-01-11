@@ -29,25 +29,24 @@ input, textarea {
 a {
     text-decoration: none;
 }
-/*
-.col-1{width: 8.33%}
-.col-2{width: 16.66%}
-.col-3{width: 25%}
-.col-4{width: 33.33%}
-.col-5{width: 41.66%}
-.col-6{width: 50%}
-.col-7{width: 58.33%}
-.col-8{width: 66.66%}
-.col-9{width: 75%}
-.col-10{width: 83.33%}
-.col-11{width: 91.66%}
-.col-12{width: 100%}
+
+.col-340px-1{width: 8.33%}
+.col-340px-2{width: 16.66%}
+.col-340px-3{width: 25%}
+.col-340px-4{width: 33.33%}
+.col-340px-5{width: 41.66%}
+.col-340px-6{width: 50%}
+.col-340px-7{width: 58.33%}
+.col-340px-8{width: 66.66%}
+.col-340px-9{width: 75%}
+.col-340px-10{width: 83.33%}
+.col-340px-11{width: 91.66%}
+.col-340px-12{width: 100%}
 
 [class*="col-"] {
     float: left;
 }
 
-*/
 /*-------------------------MOBILE FIRST!!!(320px to 480px)---------------------------*/
 
 /*---------------------------LOGO----------------------------------*/
@@ -326,8 +325,7 @@ nav {
 }
 
 .updates__article {
-    margin: 0 auto 19px;
-    padding-left: 4px;
+    margin: 0 auto 17px;
 }
 
 .updates__article_lower {
@@ -341,11 +339,11 @@ nav {
 }
 
 .updates__wrap {
-    padding-left: 63px;
+    padding-left: 65px;
 }
 
 .updates__icon1 {
-    background: url('../img/updates-icons.png') no-repeat -114px -7px;
+    background: url('../img/updates-icons.png') no-repeat -113px -7px;
     height: 47px;
     width: 47px;
     float: left;
@@ -353,7 +351,7 @@ nav {
 }
 
 .updates__icon2 {
-    background: url('../img/updates-icons.png') no-repeat -114px -72px;
+    background: url('../img/updates-icons.png') no-repeat -113px -72px;
     height: 47px;
     width: 47px;
     float: left;
@@ -361,7 +359,7 @@ nav {
 }
 
 .updates__icon3 {
-    background: url('../img/updates-icons.png') no-repeat;
+    background: url('../img/updates-icons.png') no-repeat -154px -24px;
     height: 47px;
     width: 47px;
     float: left;
@@ -377,10 +375,64 @@ nav {
 .updates__posted {
     font: 16px 'Open Sans Light', Arial, sans-serif;
     color: #454545;
+    margin-top: 2px;
+}
+
+.updates__more-wrapper {
+    width: 277px;
+    text-align: right;
+    margin: auto;
 }
 
 .updates__more {
     font: 19px "League Gothic Regular", Arial, sans-serif;
     color: #454545;
-
 }
+
+/*---------------------------TRADEMARKS SECTION ----------------------------------*/
+.trademarks {
+    width: 300px;
+    margin: auto;
+}
+
+[class*="trademarks__"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto 25px;
+}
+
+.trademarks__item1 {
+    background: url('../img/trade-mark1.png') no-repeat;
+    width: 70px;
+    height: 65px;
+}
+
+.trademarks__item2 {
+    background: url('../img/trade-mark2.png') no-repeat;
+    width: 74px;
+    height: 65px;
+}
+
+.trademarks__item3 {
+    background: url('../img/trade-mark3.png') no-repeat;
+    width: 67px;
+    height: 65px;
+}
+.trademarks__item4 {
+    background: url('../img/trade-mark4.png') no-repeat;
+    width: 57px;
+    height: 65px;
+}
+
+.trademarks__item5 {
+    background: url('../img/trade-mark5.png') no-repeat;
+    width: 106px;
+    height: 30px;
+}
+
+.trademarks__item6 {
+    background: url('../img/trade-mark6.png') no-repeat;
+    width: 84px;
+    height: 65px;
+}
+
