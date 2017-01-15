@@ -124,12 +124,12 @@ nav {
 }
 
 /*---------------------------SLIDER----------------------------------*/
-.container {
+.slider {
     margin-top: 43px;
     height: 212px;
 }
 
-.slider {
+.slider__container {
     display: inline-block;
     height: 100%;
     position: relative;
@@ -161,7 +161,7 @@ nav {
 
 .slider__right-arrow {
     background: url('../img/right-arrow.png') no-repeat;
-    height: 33px;
+    height: 35px;
     width: 23px;
     float: left;
     position: relative;
@@ -182,7 +182,7 @@ nav {
 .slider__slogan {
     color: #edbfff;
     font: 18px "League Gothic Regular", Arial, sans-serif;
-    line-height: 13px;
+    line-height: 15px;
 }
 
 .slider__text {
@@ -223,11 +223,12 @@ main {
     background: url('../img/bg-main.png') repeat;
     box-shadow: 0 13px 10px -10px #414545;
     position: relative;
+    margin-top: 65px;
 }
 
 /*---------------------------ABOUT - SECTION ----------------------------------*/
+
 .about {
-    margin-top: 65px;
     padding: 67px 0 43px;
     border: 1px solid #35273c;
     background: linear-gradient(#755284, #36293d);
@@ -235,8 +236,9 @@ main {
 }
 
 .about__item {
-    width: 258px;
+    width: 266px;
     margin: 0 auto 20px;
+    padding-left: 5px;
 }
 
 .about__item_lower {
@@ -253,7 +255,6 @@ main {
 
 .about__wrap {
     padding-left: 50px;
-    width: 261px;
 }
 
 .about__header {
@@ -318,8 +319,8 @@ main {
 }
 
 .clients__header_pink {
-    font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #edbfff;
+    display: block;
 }
 
 .clients__text {
@@ -540,24 +541,78 @@ main {
 
 
 
-/*--------------------------- 480px ----------------------------------*
+/*--------------------------- 480px ----------------------------------*/
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 768px){
 
-    .container {
+    .slider {
+        margin-top: 27px;
         background: rgba(0, 0, 0, 0.2);
+        height: 246px;
+    }
+
+    .slider__wrapper {
+        margin: 0 0 0 12px;
+        padding: 0 0 8px 4px;
+    }
+
+    .slider__nav {
+        margin-top: 23px;
+        padding-left: 8px;
+    }
+
+    main {
+        margin-top: 56px;
     }
 
     .iphone {
         display: block;
+        margin: 0 9px 0 9px;
         background:url('../img/iphone480.png');
         width: 192px;
         height: 304px;
         float: left;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        top: -9px;
+        left: 0;
     }
+
+    .about {
+        padding: 74px 0 48px;
+    }
+
+    .about__item {
+        width: 426px;
+        padding-left: 6px;
+    }
+
+    .about__item_lower {
+        margin-top: 24px;
+    }
+
+    .clients {
+        width: 440px;
+    }
+
+    .clients__wrap {
+        padding: 23px 35px 39px;
+    }
+
+    .clients__header {
+        font: 30px "League Gothic Regular", Arial, sans-serif;
+        margin: 0 0 11px 3px;
+    }
+
+    .clients__header_pink {
+        display: inline;
+    }
+
+    .clients__nav-row {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+
 }
 /*--------------------------- 768px ----------------------------------*
 
