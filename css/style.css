@@ -29,7 +29,6 @@ body {
 /*---------------------------LOGO----------------------------------*/
 .logo {
     text-align: center;
-    margin-top: 60px;
 }
 
 .logo__text {
@@ -48,6 +47,12 @@ body {
 }
 
 /*---------------------------DROP-DOWN NAVIGATION----------------------------------*/
+header {
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+}
+
 nav {
     margin-top: 20px;
 }
@@ -119,43 +124,49 @@ nav {
 }
 
 /*---------------------------SLIDER----------------------------------*/
-
-.slider {
-    text-align: center;
-    height: 212px;
+.container {
     margin-top: 43px;
+    height: 212px;
 }
 
-.slider::before  {
-    height: 100%;
-    content: '';
+.slider {
     display: inline-block;
-    vertical-align: middle;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .slider__wrapper {
-    width: 202px;
-    display: inline-block;
-    vertical-align: middle;
+    width: 212px;
     text-align: left;
-    margin: 0 25px;
-    padding-left: 5px;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px;
+    padding: 0 0 8px 10px;
 }
 
 .slider__left-arrow {
     background: url('../img/left-arrow.png') no-repeat;
     height: 33px;
-    width: 28px;
-    display: inline-block;
-    vertical-align: middle;
+    width: 23px;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slider__right-arrow {
     background: url('../img/right-arrow.png') no-repeat;
     height: 33px;
     width: 23px;
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .iphone {
@@ -165,11 +176,13 @@ nav {
 .slider__main-slogan {
     color: #fefefe;
     font: 36px "League Gothic Regular", Arial, sans-serif;
+    text-shadow: 0 1px 1px #000;
 }
 
 .slider__slogan {
     color: #edbfff;
     font: 18px "League Gothic Regular", Arial, sans-serif;
+    line-height: 13px;
 }
 
 .slider__text {
@@ -180,7 +193,7 @@ nav {
 
 .slider__nav {
     text-align: center;
-    padding-left: 7px;
+    padding-left: 8px;
 }
 
 .slider__item {
@@ -527,42 +540,39 @@ main {
 
 
 
-/*--------------------------- 480px ----------------------------------*/
+/*--------------------------- 480px ----------------------------------*
 
 @media only screen and (min-width: 480px){
-    .slider {
+
+    .container {
         background: rgba(0, 0, 0, 0.2);
     }
+
     .iphone {
-        display: inline-block;
+        display: block;
         background:url('../img/iphone480.png');
         width: 192px;
         height: 304px;
-        vertical-align: middle;
+        float: left;
         position: relative;
-        left: 0;
-        top: -9px;
+        top: 50%;
+        transform: translateY(-50%);
     }
-
 }
-/*--------------------------- 768px ----------------------------------*/
+/*--------------------------- 768px ----------------------------------*
 
 @media only screen and (min-width: 768px){
-    .slider {
-        margin-top: 27px;
-        height: 241px;
-    }
+
     .iphone {
-        display: inline-block;
+        display: block;
         background: url('../img/iphone.png') no-repeat;
         width: 274px;
         height: 434px;
-        vertical-align: middle;
+        float: left;
         position: relative;
-        left: 0;
-        top: -9px;
+        top: 50%;
+        transform: translateY(-50%);
     }
-    /*Play button*/
 
     .iphone__play {
         position: relative;
@@ -607,16 +617,19 @@ main {
         border-color: transparent transparent transparent #ffffff;
     }
 }
-/*--------------------------- 960px ----------------------------------*/
+/*--------------------------- 960px ----------------------------------*
 
 @media only screen and (min-width: 960px){
 
     .iphone {
-        display: inline-block;
+        display: block;
         background: url('../img/iphone.png') no-repeat;
         width: 274px;
         height: 372px;
-        vertical-align: middle;
+        float: left;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .iphone__play {
@@ -663,3 +676,5 @@ main {
     }
 
 }
+
+*/
