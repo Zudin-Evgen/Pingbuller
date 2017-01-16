@@ -15,7 +15,11 @@ a {
     text-decoration: none;
 }
 
-.clear-fix {
+ul li {
+    list-style: none;
+}
+
+.clear-fix::after {
     content: '';
     display: table;
     clear: both;
@@ -67,6 +71,7 @@ nav {
     padding: 3px 0 2px;
     margin: auto;
     border-bottom: 3px solid #edbfff;
+    text-shadow: 0 0 3px #fff;
 }
 
 .dropdown-menu__button:hover > .menu {
@@ -87,7 +92,6 @@ nav {
 }
 
 .menu__item {
-    list-style: none;
     border-bottom: 1px solid #36283e;
     border-top: 1px solid #503d58;
 }
@@ -97,6 +101,7 @@ nav {
     color: #fff;
     display: block;
     padding: 2px 0 9px;
+    text-shadow: none;
 }
 
 .menu__item:first-child {
@@ -298,7 +303,7 @@ main {
 .clients__wrap {
     box-shadow: 0 1px 1px #D2D2D2;
     margin: 0 auto 23px;
-    padding: 22px 35px 34px;
+    padding: 25px 35px 31px;
     position: relative;
     background: #fff;
 }
@@ -315,19 +320,21 @@ main {
 .clients__header {
     font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #454545;
-    margin-bottom: -4px;
+    width: 85px;
+    line-height: 21px;
 }
 
 .clients__header_pink {
+    font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #edbfff;
-    display: block;
+    line-height: 10px;
 }
 
 .clients__text {
     font: 16px 'Open Sans Light', Arial, sans-serif;
     color: #454545;
     overflow: hidden;
-    margin-left: 3px;
+    margin: 4px 0 0 3px;
     height: 162px;
     line-height: 24px;
 }
@@ -360,18 +367,21 @@ main {
     border-radius: 100%;
 }
 /*---------------------------RESENT UPDATES ----------------------------------*/
+.updates__container {
+    margin: 40px auto 85px;
+}
+
 .updates {
-    margin: 40px auto 0;
-    padding: 0 0 87px 0;
-    width: 285px;
+    width: 283px;
+    margin: auto;
 }
 
 .updates__article {
-    margin: 0 auto 17px;
+    margin-left: 2px;
 }
 
 .updates__article_lower {
-    margin-top: 25px;
+    margin-bottom: 6px;
 }
 
 .updates__header {
@@ -381,7 +391,9 @@ main {
 }
 
 .updates__wrap {
-    padding-left: 65px;
+    float: left;
+    width: 216px;
+    margin: 0 0 17px 18px;
 }
 
 .updates__icon1 {
@@ -412,18 +424,22 @@ main {
 .updates__topic {
     font: 16px 'Open Sans Extrabold', Arial, sans-serif;
     color: #454545;
+    overflow: hidden;
+    height: 23px;
 }
 
 .updates__posted {
     font: 16px 'Open Sans Light', Arial, sans-serif;
     color: #454545;
     margin-top: 2px;
+    overflow: hidden;
+    height: 23px;
 }
 
 .updates__more-wrapper {
     text-align: right;
     margin: auto;
-    padding-right: 5px
+    padding-right: 3px;
 }
 
 .updates__more {
@@ -433,55 +449,19 @@ main {
 
 /*---------------------------TRADEMARKS SECTION ----------------------------------*/
 .trademarks {
-    width: 294px;
+    width: 297px;
     margin: auto;
-    padding: 52px 0 11px;
+    padding: 22px 0 46px;
     text-align: center;
 }
 
-[class*="trademarks__"] {
-    display: inline-block;
+.trademarks__img {
+    margin: 30px 26px;
     vertical-align: middle;
-    margin: 0 27px 60px;
 }
 
-.trademarks__item_closer {
-    margin-bottom: 43px;
-}
-
-.trademarks__item1 {
-    background: url('../img/trade-mark1.png') no-repeat;
-    width: 70px;
-    height: 65px;
-}
-
-.trademarks__item2 {
-    background: url('../img/trade-mark2.png') no-repeat;
-    width: 73px;
-    height: 65px;
-}
-
-.trademarks__item3 {
-    background: url('../img/trade-mark3.png') no-repeat;
-    width: 67px;
-    height: 65px;
-}
-.trademarks__item4 {
-    background: url('../img/trade-mark4.png') no-repeat;
-    width: 52px;
-    height: 65px;
-}
-
-.trademarks__item5 {
-    background: url('../img/trade-mark5.png') no-repeat;
-    width: 103px;
-    height: 30px;
-}
-
-.trademarks__item6 {
-    background: url('../img/trade-mark6.png') no-repeat;
-    width: 79px;
-    height: 65px;
+.trademarks__img_lower {
+    margin: 30px 30px 14px 30px;
 }
 
 /*---------------------------CATEGORIES SECTION ----------------------------------*/
@@ -524,7 +504,7 @@ main {
     background: url('../img/bg-footer.png') no-repeat center bottom;
     height: 200px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 39px;
 }
 
 .footer__copyright {
@@ -539,11 +519,13 @@ main {
     text-shadow: 1px 2px 1px #5f5f64;
 }
 
+.footer-menu {
+    display: none;
+}
 
+/*---------------------------Changes for 480px resolution----------------------------------*/
 
-/*--------------------------- 480px ----------------------------------*/
-
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
     .slider {
         margin-top: 27px;
@@ -568,7 +550,7 @@ main {
     .iphone {
         display: block;
         margin: 0 9px 0 9px;
-        background:url('../img/iphone480.png');
+        background: url('../img/iphone480.png');
         width: 192px;
         height: 304px;
         float: left;
@@ -595,16 +577,17 @@ main {
     }
 
     .clients__wrap {
-        padding: 23px 35px 39px;
+        padding: 23px 21px 35px 35px;
     }
 
     .clients__header {
         font: 30px "League Gothic Regular", Arial, sans-serif;
         margin: 0 0 11px 3px;
+        width: auto;
     }
 
     .clients__header_pink {
-        display: inline;
+        font: 30px "League Gothic Regular", Arial, sans-serif;
     }
 
     .clients__nav-row {
@@ -612,7 +595,81 @@ main {
         padding-right: 10px;
     }
 
+    .clients__text {
+        height: 166px;
+    }
 
+    .updates {
+        width: 344px;
+    }
+
+    .updates__container {
+        margin: 40px auto 86px;
+    }
+
+    .updates {
+        width: 375px;
+        padding-left: 30px;
+    }
+
+    .updates__article {
+        margin: 0 0 2px 2px;
+    }
+
+    .updates__wrap {
+        width: 258px;
+        margin: 0 0 17px 18px;
+    }
+
+    .updates__article_lower {
+        margin-bottom: 1px;
+    }
+
+    .trademarks {
+        width: 407px;
+        padding: 24px 0 26px;
+    }
+
+    .trademarks__img {
+        margin: 13px 26px;
+        vertical-align: middle;
+    }
+
+    .categories {
+        display: block;
+        padding: 76px 0 34px;
+    }
+
+    .categories__wrap {
+        width: 444px;
+        margin: auto;
+    }
+
+    .footer {
+        padding-top: 44px;
+    }
+
+    .fmenu {
+        display: block;
+        width: 439px;
+        margin: 0 auto 32px;
+    }
+
+    .fmenu__item {
+        float: left;
+        margin-left: 25px;
+    }
+
+    .fmenu__item:first-child {
+        margin-left: 0;
+    }
+
+    .fmenu__link {
+        font: 20px "League Gothic Regular", Arial, sans-serif;
+        color: #fff;
+        text-shadow: 1px 2px 1px #535357;
+        display: block;
+    }
 }
 /*--------------------------- 768px ----------------------------------*
 
