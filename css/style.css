@@ -58,79 +58,83 @@ header {
 }
 
 nav {
-    margin-top: 20px;
-}
-
-.dropdown-menu__button {
-    text-align: center;
-    position: relative;
-    font: 24px "League Gothic Regular", Arial, sans-serif;
-    color: #fff;
-    display: block;
-    width: 48px;
-    padding: 3px 0 2px;
-    margin: auto;
-    border-bottom: 3px solid #edbfff;
-    text-shadow: 0 0 3px #fff;
-}
-
-.dropdown-menu__button:hover > .menu {
-    display: block;
+    margin-top: 23px;
+    height: 29px;
 }
 
 .menu {
-    position: absolute;
-    top: -8px;
-    left: -98px;
-    text-align: center;
-    width: 245px;
-    background: rgba(54, 41, 62, 0.9);
+    width: 50px;
     margin: auto;
-    border-radius: 9px;
-    border: 1px solid #051116;
-    display: none;
+    text-align: center;
 }
 
 .menu__item {
+    display: none;
+}
+
+.menu .menu__item:first-child {
+    display: list-item;
+}
+
+.menu .menu__link_lighted {
+    font: 24px "League Gothic Regular", Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+    padding: 0 5px 2px;
+    border-bottom: 2px solid #edbfff;
+}
+
+.menu:hover {
+    position: relative;
+    left: 0;
+    top: -11px;
+    margin:auto;
+    width: 247px;
+    background: rgba(54, 41, 62, 0.9);
+    border-radius: 9px;
+    border: 1px solid #051116;
+}
+
+.menu:hover .menu__item {
+    display: list-item;
     border-bottom: 1px solid #36283e;
     border-top: 1px solid #503d58;
 }
 
-.menu__link {
-    font: 24px "League Gothic Regular", Arial, sans-serif;
-    color: #fff;
-    display: block;
-    padding: 2px 0 9px;
-    text-shadow: none;
-}
 
-.menu__item:first-child {
+.menu:hover .menu__item:first-child {
     border-top: none;
 }
 
-.menu__item:last-child {
+.menu:hover .menu__item:last-child {
     border-bottom: none;
 }
 
-/* Link modifier - LIGHTED LINK */
-.menu__link_lighted {
-    margin: 7px auto 4px;
+.menu:hover .menu__link {
+    font: 24px "League Gothic Regular", Arial, sans-serif;
+    color: #fff;
+    display: block;
+    padding: 5px 0 6px;
+}
+
+.menu:hover .menu__link_lighted {
+    margin: 7px auto 3px;
     width: 48px;
     text-shadow: 0 0 3px #fff;
     padding: 3px 0 2px;
-    border-bottom: 3px solid #edbfff;
+    border-bottom: 2px solid #edbfff;
 }
 
 /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
-.menu__link_opacity {
+.menu:hover .menu__link_opacity {
     background: rgba(54, 41, 62, 0.9);
     border-bottom: 2px solid #edbfff;
-    padding: 2px 0 7px;
+    padding: 4px 0 5px;
 }
 
 /*---------------------------SLIDER----------------------------------*/
 .slider {
-    margin-top: 43px;
+    margin-top: 48px;
     height: 212px;
 }
 
@@ -303,7 +307,7 @@ main {
 .clients__wrap {
     box-shadow: 0 1px 1px #D2D2D2;
     margin: 0 auto 23px;
-    padding: 25px 35px 31px;
+    padding: 25px 35px 33px;
     position: relative;
     background: #fff;
 }
@@ -321,7 +325,7 @@ main {
     font: 24px "League Gothic Regular", Arial, sans-serif;
     color: #454545;
     width: 85px;
-    line-height: 21px;
+    line-height: 24px;
 }
 
 .clients__header_pink {
@@ -413,7 +417,7 @@ main {
 }
 
 .updates__icon3 {
-    background: url('../img/updates-icons.png') no-repeat -154px -24px;
+    background: url('../img/updates-icons.png') no-repeat -154px -23px;
     height: 47px;
     width: 47px;
     float: left;
@@ -519,16 +523,16 @@ main {
     text-shadow: 1px 2px 1px #5f5f64;
 }
 
-.footer-menu {
+.fmenu {
     display: none;
 }
 
 /*---------------------------Changes for 480px resolution----------------------------------*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
 
     .slider {
-        margin-top: 27px;
+        margin-top: 32px;
         background: rgba(0, 0, 0, 0.2);
         height: 246px;
     }
@@ -671,9 +675,95 @@ main {
         display: block;
     }
 }
-/*--------------------------- 768px ----------------------------------*
+/*--------------------------- 768px ----------------------------------*/
 
 @media only screen and (min-width: 768px){
+
+    .logo {
+        width: 440px;
+        text-align: left;
+        margin: auto;
+    }
+
+    .menu {
+        width: 732px;
+    }
+
+    .menu__item {
+        display: list-item;
+    }
+
+    .menu:hover {
+        position: static;
+        left: 0;
+        top: 0;
+        margin: auto;
+        width: 732px;
+        background: 0;
+        border-radius: 0;
+        border:0;
+    }
+
+    .menu:hover .menu__item {
+        display: list-item;
+        border-bottom: 0;
+        border-top: 0;
+    }
+
+
+    .menu:hover .menu__item:first-child {
+        border-top: 0;
+    }
+
+    .menu:hover .menu__item:last-child {
+        border-bottom: 0;
+    }
+
+    .menu:hover .menu__link {
+        font: 24px "League Gothic Regular", Arial, sans-serif;
+        display: block;
+        padding: 0;
+        text-shadow: 1px 2px 1px #535357;
+    }
+
+    .menu:hover .menu__link_lighted {
+        margin: 0;
+        width: auto;
+        text-shadow: 1px 2px 1px #535357;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
+    .menu:hover .menu__link_opacity {
+        background: 0;
+        border-bottom: 0;
+        padding: 0 0 0 0;
+    }
+
+    .menu .menu__link_lighted {
+        margin: 0;
+        width: auto;
+        text-shadow: 1px 2px 1px #535357;
+        padding: 0 0 0 0;
+        border-bottom: 0;
+    }
+
+    /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
+    .menu .menu__link_opacity {
+        background: 0;
+        border-bottom: 0;
+        padding: 0 0 0 0;
+    }
+
+
+    .menu .menu__link {
+        font: 24px "League Gothic Regular", Arial, sans-serif;
+        display: block;
+        float: left;
+        color: #fff;
+        text-shadow: 1px 2px 1px #535357;
+    }
 
     .iphone {
         display: block;
@@ -728,6 +818,8 @@ main {
         border-width: 13px 0 13px 23px;
         border-color: transparent transparent transparent #ffffff;
     }
+
+
 }
 /*--------------------------- 960px ----------------------------------*
 
