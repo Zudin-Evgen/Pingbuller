@@ -37,8 +37,11 @@ body {
 
 .logo__text {
     font: 48px  "League Gothic Regular", Arial, sans-serif;
-    color: #fff;
     text-shadow: 0 1px 1px #3d3639;
+}
+
+.logo__link {
+    color: #fff;
 }
 
 .logo__text::after {
@@ -192,10 +195,13 @@ nav {
     color: #edbfff;
     font: 18px "League Gothic Regular", Arial, sans-serif;
     line-height: 15px;
+    height: 15px;
+    width: 202px;
+    overflow: hidden;
 }
 
 .slider__text {
-    font: 16px MariadPro Regular, sans-serif;
+    font: 16px "Open Sans Light", sans-serif;
     color: #fff;
     display: none;
 }
@@ -451,6 +457,12 @@ main {
     color: #454545;
 }
 
+.updates__hidden {
+    display: none;
+    font: 19px "League Gothic Regular", Arial, sans-serif;
+    color: #454545;
+}
+
 /*---------------------------TRADEMARKS SECTION ----------------------------------*/
 .trademarks {
     width: 297px;
@@ -502,6 +514,18 @@ main {
     line-height: 23px;
 }
 
+.categories__copyright {
+    display: none;
+}
+
+.hidden__header {
+    display: none;
+}
+
+.categories__header_resent {
+    display: none;
+}
+
 /*---------------------------FOOTER SECTION ----------------------------------*/
 
 .footer {
@@ -541,6 +565,8 @@ main {
         margin: 0 0 0 12px;
         padding: 0 0 8px 4px;
     }
+
+
 
     .slider__nav {
         margin-top: 23px;
@@ -680,17 +706,54 @@ main {
 @media only screen and (min-width: 768px){
 
     .logo {
-        width: 440px;
+        width: 732px;
         text-align: left;
         margin: auto;
     }
 
-    .menu {
+    nav {
         width: 732px;
+        margin: 21px auto 0;
+    }
+
+    .menu {
+        width: auto;
+        text-align: left;
     }
 
     .menu__item {
+        float: left;
+        margin-left: 52px;
         display: list-item;
+    }
+
+    .menu__item:first-child {
+        margin-left: 0;
+    }
+
+
+    .menu .menu__link_lighted {
+        margin: 0;
+        width: auto;
+        text-shadow: 1px 2px 1px #535357;
+        padding: 0 0 0 0;
+        border-bottom: 0;
+    }
+
+    /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
+    .menu .menu__link_opacity {
+        background: 0;
+        border-bottom: 0;
+        padding: 0 0 0 0;
+    }
+
+
+    .menu .menu__link {
+        font: 24px "League Gothic Regular", Arial, sans-serif;
+        display: block;
+        float: left;
+        color: #fff;
+        text-shadow: 1px 2px 1px #535357;
     }
 
     .menu:hover {
@@ -698,7 +761,7 @@ main {
         left: 0;
         top: 0;
         margin: auto;
-        width: 732px;
+        width: auto;
         background: 0;
         border-radius: 0;
         border:0;
@@ -741,28 +804,563 @@ main {
         padding: 0 0 0 0;
     }
 
-    .menu .menu__link_lighted {
-        margin: 0;
-        width: auto;
-        text-shadow: 1px 2px 1px #535357;
-        padding: 0 0 0 0;
-        border-bottom: 0;
-    }
-
-    /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
-    .menu .menu__link_opacity {
-        background: 0;
-        border-bottom: 0;
-        padding: 0 0 0 0;
-    }
-
-
-    .menu .menu__link {
-        font: 24px "League Gothic Regular", Arial, sans-serif;
+    .iphone {
         display: block;
+        background: url('../img/iphone.png') no-repeat;
+        width: 274px;
+        height: 434px;
         float: left;
-        color: #fff;
-        text-shadow: 1px 2px 1px #535357;
+        position: relative;
+        top: -23px;
+        left: 0;
+        margin: 0 27px 0 110px;
+    }
+
+    .iphone__play {
+        position: relative;
+        left: 137px;
+        top: 108px;
+    }
+
+    .iphone__blue__circle {
+        width: 76px;
+        height: 76px;
+        border: 12px solid rgba(148, 151, 152, 0.5);
+        border-radius: 100%;
+    }
+
+    .iphone__purple__circle {
+        position: relative;
+        left: -9px;
+        top: -9px;
+        width: 70px;
+        height: 70px;
+        border: 6px solid #46324f;
+        border-radius: 100%;
+    }
+
+    .iphone__pink__circle {
+        position: relative;
+        left: 4px;
+        top: 4px;
+        width: 50px;
+        height: 50px;
+        background: rgba(203, 165, 218, 0.7);
+        border-radius: 100%;
+    }
+
+    .iphone__triangle {
+        position: relative;
+        left: 17px;
+        top: 12px;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 13px 0 13px 23px;
+        border-color: transparent transparent transparent #ffffff;
+    }
+
+    .flash {
+        background: url('../img/flash.png') no-repeat;
+        width: 42px;
+        height: 42px;
+        position: relative;
+        left: 112px;
+        top: 38px;
+    }
+
+    .main {
+        margin-top: 97px;
+    }
+
+    .slider {
+        margin-top: 75px;
+        height: 400px;
+    }
+
+    .slider__wrapper {
+        width: 294px;
+        padding: 0 0 15px 0;
+        margin: 0 0 0 21px;
+    }
+
+    .slider__text {
+        display: block;
+        height: 100px;
+        overflow: hidden;
+        line-height: 25px;
+    }
+
+    .slider__main-slogan {
+        font-size: 48px;
+        line-height: 45px;
+    }
+
+    .slider__nav {
+        margin-top: 37px;
+        padding-left: 398px;
+    }
+
+    .slider__slogan {
+        font-size: 24px;
+        line-height: 41px;
+        width: 269px;
+        overflow: hidden;
+        height: 41px;
+    }
+
+    .about {
+        margin-top: 97px;
+        padding: 74px 0 64px;
+    }
+
+    .about__container {
+        width: 718px;
+        margin: auto;
+    }
+
+    .about__item {
+        width: 203px;
+        padding-left: 6px;
+        float: left;
+        margin: 0 0 0 49px;
+    }
+
+    .about__item_right {
+        margin-left: 60px;
+    }
+
+    .about__item:first-child {
+        margin-left: 0;
+    }
+
+    .about__item_lower {
+        margin-top: 0;
+    }
+
+    .about__description {
+        height: 140px;
+        line-height: 24px;
+    }
+
+    .clients-updates__container {
+        width: 730px;
+        margin: 100px auto 68px;
+        padding-left: 20px;
+    }
+
+    .clients {
+        float: left;
+        padding: 0 0 0 3px;
+        width: 316px;
+    }
+
+    .clients__wrap {
+        margin: 0 auto 24px;
+        padding: 29px 21px 40px 36px;
+    }
+
+    .clients__nav-row {
+        padding-right: 0;
+    }
+
+    .clients__header {
+        font: 24px "League Gothic Regular", Arial, sans-serif;
+        color: #454545;
+        width: 85px;
+        line-height: 24px;
+        margin-bottom: 9px;
+    }
+
+    .clients__header_pink {
+        font: 24px "League Gothic Regular", Arial, sans-serif;
+        color: #edbfff;
+        line-height: 10px;
+    }
+
+    .clients__text {
+        font: 16px 'Open Sans Light', Arial, sans-serif;
+        color: #454545;
+        overflow: hidden;
+        margin: 4px 0 0 3px;
+        height: 146px;
+        line-height: 24px;
+    }
+
+    .updates {
+        width: 364px;
+        padding-left: 27px;
+    }
+
+    .updates__container {
+        float: left;
+        margin: 25px 0 0 30px;
+    }
+
+    .trademarks {
+        width: 773px;
+        padding: 13px 0 16px;
+    }
+
+    .categories {
+        padding: 98px 0 36px;
+    }
+
+    .categories__wrap {
+        width: 747px;
+        padding-left: 7px;
+    }
+
+    .categories__item {
+        float: left;
+        width: 210px;
+        margin-left: 56px;
+    }
+
+    .categories__item_right {
+        margin-left: 54px;
+    }
+
+    .categories__item:first-child {
+        margin-left: 0;
+    }
+
+    .categories__text {
+        height: 166px;
+        line-height: 24px;
+    }
+
+    .fmenu {
+        width: 731px;
+        margin: 0 auto 32px;
+    }
+
+    .fmenu__item {
+        margin-left: 43px;
+    }
+
+    .footer__copyright {
+        width: 722px;
+        margin: auto;
+        text-align: right;
+    }
+
+}
+/*--------------------------- 960px ----------------------------------*/
+
+@media only screen and (min-width: 960px){
+
+    .header {
+        width: 965px;
+        margin: 39px auto 0;
+    }
+
+    .logo__star {
+        background: url('../img/logo-star.png');
+        position: relative;
+        left: 12px;
+        top: 12px;
+        width: 21px;
+        height: 21px;
+    }
+
+    .logo {
+        float: left;
+        width: auto;
+    }
+
+    nav {
+        width: auto;
+        margin: 32px 0 0 166px;
+        float: left;
+    }
+
+    .menu .menu__link_lighted {
+        padding: 0 5px 0;
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .menu:hover .menu__link_lighted {
+        padding: 0 5px 0;
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .menu__item {
+        margin-left: 47px;
+    }
+
+    .menu__item_right {
+        margin-left: 52px;
+    }
+
+    .slider {
+        margin-top: 159px;
+    }
+
+    .slider__container {
+        width: 1006px;
+    }
+
+    .slider__main-slogan {
+        font-size: 60px;
+        line-height: 51px;
+    }
+
+    .slider__slogan {
+        font-size: 32px;
+        width: 408px;
+    }
+
+    .slider__text {
+        font-size: 18px;
+        height: 149px;
+        line-height: 24px;
+    }
+
+    .slider__wrapper {
+        width: 504px;
+        padding: 6px 0 0 0;
+    }
+
+    .slider__left-arrow {
+        background: url('../img/left-arrow.png') no-repeat;
+        height: 33px;
+        width: 23px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 1278px;
+        transform: translateY(-50%);
+    }
+
+    .slider__right-arrow {
+        background: url('../img/right-arrow.png') no-repeat;
+        height: 35px;
+        width: 23px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 1243px;
+        transform: translateY(-50%);
+    }
+
+    .slider__nav {
+        margin-top: 94px;
+        padding-left: 540px;
+    }
+
+    main {
+        margin-top: 54px;
+    }
+
+    .about {
+        margin-top: 0;
+        padding: 73px 0 66px;
+    }
+
+    .about__container {
+        width: 946px;
+    }
+
+    .about__icon {
+        margin: 13px 0 0 -2px;
+    }
+
+    .about__icon2 {
+        background: url('../img/about-icons.png') no-repeat -31px 0;
+    }
+
+    .about__icon3 {
+        background: url('../img/about-icons.png') no-repeat -65px 0;
+    }
+
+    .about__header {
+        font-size: 30px;
+    }
+
+    .about__item {
+        width: 270px;
+        margin: 0 0 0 68px;
+    }
+
+    .about__item_wider {
+        width: 275px;
+    }
+
+    .about__item_closer {
+        margin: 0 0 0 63px;
+    }
+
+    .about__description {
+        height: 125px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .clients-updates__container {
+        width: 962px;
+        padding-left: 20px;
+    }
+
+    .clients {
+        width: 430px;
+    }
+
+    .updates__more {
+        display: none;
+    }
+
+    .updates__hidden {
+        display: block;
+    }
+    /* TOOLTIP */
+    .clients__wrap {
+        padding: 25px 21px 40px 36px;
+        position: relative;
+    }
+
+    .clients__wrap::after {
+        position: absolute;
+        top: 100%;
+        left: 365px;
+        content: ' ';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 0 0 20px;
+        border-color: #fff transparent transparent transparent;
+    }
+
+    .clients__wrap::before {
+        position: absolute;
+        top: 100%;
+        left: 365px;
+        content: ' ';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 23px 0 0 23px;
+        border-color: #D2D2D2 transparent transparent transparent;
+        margin-left: -2px;
+    }
+
+    .clients__header {
+        font: 30px "League Gothic Regular", Arial, sans-serif;
+        margin: 0 0 6px 3px;
+        width: auto;
+    }
+
+    .clients__text {
+        height: 164px;
+    }
+
+    .clients__header_pink {
+        font: 30px "League Gothic Regular", Arial, sans-serif;
+    }
+
+    .updates {
+        width: 468px;
+    }
+
+    .updates__wrap {
+        width: 374px;
+    }
+
+    .updates__more-wrapper {
+        padding-right: 8px;
+    }
+
+    .updates__container {
+        float: left;
+        margin: 25px 0 0 32px;
+    }
+
+    .trademarks {
+        padding: 12px 0 17px;
+        width: 838px;
+    }
+
+    .trademarks__img {
+        margin: 13px 31px;
+    }
+
+    .categories__copyright {
+        font: italic 16px "Georgia", sans-serif;
+        text-shadow: 1px 1px 1px #fff;
+        display: block;
+        color: #c5c5c5;
+    }
+
+    .categories {
+        padding: 93px 0 32px;
+    }
+
+    .categories__item {
+        width: 277px;
+        margin: 0 0 59px 61px;
+    }
+
+    .categories__item_right {
+        margin-left: 63px;
+    }
+
+    .categories__header {
+        font-size: 30px;
+        margin-bottom: -6px;
+    }
+
+    .categories__text {
+        margin-top: 10px;
+        height: 122px;
+    }
+
+    .categories__text_show {
+        height: 166px;
+    }
+
+    .categories__wrap {
+        width: 977px
+    }
+
+    .hidden__header {
+        font: 48px "League Gothic Regular", Arial, sans-serif;
+        color: #454545;
+        text-shadow: 0 2px 2px #fff;
+        display: block;
+        line-height: 52px;
+        margin-bottom: 9px;
+    }
+
+    .hidden__header_silver {
+        color: #b9b9b9;
+        text-shadow: 0 2px 1px #fff;
+    }
+
+    .categories__header_off {
+        display: none;
+    }
+
+    .categories__header_resent {
+        display: block;
+    }
+
+    .clear_word {
+        display: none;
+    }
+
+    .footer__container {
+        width: 962px;
+        margin: auto;
+    }
+
+    .fmenu {
+        float: left;
+        width: auto;
+    }
+
+    .footer__copyright {
+        float: left;
+        width: auto;
+        margin: 7px 0 0 296px;
     }
 
     .iphone {
@@ -772,73 +1370,17 @@ main {
         height: 434px;
         float: left;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        top: -17px;
+        margin: 0 27px 0 112px;
+    }
+
+    .flash {
+        display: none;
     }
 
     .iphone__play {
         position: relative;
-        left: 141px;
-        top: 149px;
-    }
-
-    .iphone__blue__circle {
-        width: 76px;
-        height: 76px;
-        border: 12px solid rgba(148, 151, 152, 0.5);
-        border-radius: 100%;
-    }
-
-    .iphone__purple__circle {
-        position: relative;
-        left: -9px;
-        top: -9px;
-        width: 70px;
-        height: 70px;
-        border: 6px solid #46324f;
-        border-radius: 100%;
-    }
-
-    .iphone__pink__circle {
-        position: relative;
-        left: 4px;
-        top: 4px;
-        width: 50px;
-        height: 50px;
-        background: rgba(203, 165, 218, 0.7);
-        border-radius: 100%;
-    }
-
-    .iphone__triangle {
-        position: relative;
-        left: 17px;
-        top: 12px;
-        border-radius: 3px;
-        border-style: solid;
-        border-width: 13px 0 13px 23px;
-        border-color: transparent transparent transparent #ffffff;
-    }
-
-
-}
-/*--------------------------- 960px ----------------------------------*
-
-@media only screen and (min-width: 960px){
-
-    .iphone {
-        display: block;
-        background: url('../img/iphone.png') no-repeat;
-        width: 274px;
-        height: 372px;
-        float: left;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .iphone__play {
-        position: relative;
-        left: 141px;
+        left: 137px;
         top: 149px;
     }
 
@@ -880,5 +1422,3 @@ main {
     }
 
 }
-
-*/
