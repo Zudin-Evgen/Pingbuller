@@ -144,15 +144,13 @@ nav {
 .slider {
     margin-top: 48px;
     height: 212px;
+    text-align: center;
 }
 
 .slider__container {
     display: inline-block;
-    height: 100%;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .slider__wrapper {
@@ -161,8 +159,7 @@ nav {
     float: left;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    margin: 0 30px;
+    margin: -33px 30px 0;
     padding: 0 0 8px 10px;
 }
 
@@ -173,7 +170,7 @@ nav {
     float: left;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -16px;
 }
 
 .slider__right-arrow {
@@ -183,7 +180,7 @@ nav {
     float: left;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -16px;
 }
 
 .iphone {
@@ -566,12 +563,15 @@ main {
         height: 246px;
     }
 
-    .slider__wrapper {
-        margin: 0 0 0 12px;
-        padding: 0 0 8px 4px;
+    .slider__container {
+        margin-top: -1px;
     }
 
-
+    .slider__wrapper {
+        position: relative;
+        top: 50%;
+        margin: -33px 6px;
+    }
 
     .slider__nav {
         margin-top: 23px;
@@ -584,14 +584,13 @@ main {
 
     .iphone {
         display: block;
-        margin: 0 9px 0 9px;
+        margin: -152px 9px 0 9px;
         background: url('../img/iphone480.png');
         width: 192px;
         height: 304px;
         float: left;
         position: relative;
-        top: -9px;
-        left: 0;
+        top: 20px;
     }
 
     .about {
@@ -745,7 +744,6 @@ main {
         border-bottom: 0;
     }
 
-    /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
     .menu .menu__link_opacity {
         background: 0;
         border-bottom: 0;
@@ -802,7 +800,6 @@ main {
         border-bottom: 0;
     }
 
-    /* Link modifier - MORE OPACITY AND UNDERLINE LINK */
     .menu:hover .menu__link_opacity {
         background: 0;
         border-bottom: 0;
@@ -816,9 +813,9 @@ main {
         height: 434px;
         float: left;
         position: relative;
-        top: -23px;
+        top: -5px;
         left: 0;
-        margin: 0 23px 0 110px;
+        margin: -217px 25px 0 110px;
     }
 
     .iphone__play {
@@ -884,8 +881,10 @@ main {
 
     .slider__wrapper {
         width: 294px;
+        position: relative;
+        top: 50%;
         padding: 0 0 15px 0;
-        margin: 0 0 0 21px;
+        margin: -100px 0 0 20px;
     }
 
     .slider__text {
@@ -1102,7 +1101,8 @@ main {
     }
 
     .slider__container {
-        width: 1006px;
+        margin-top: 2px;
+        margin-right: 47px;
     }
 
     .slider__main-slogan {
@@ -1124,6 +1124,9 @@ main {
     .slider__wrapper {
         width: 504px;
         padding: 6px 0 0 0;
+        position: relative;
+        top: 50%;
+        margin: -126px 0 0 0;
     }
 
     .slider__left-arrow {
@@ -1131,10 +1134,10 @@ main {
         height: 33px;
         width: 23px;
         float: left;
-        position: absolute;
+        position: relative;
         top: 50%;
-        left: -295px;
-        transform: translateY(-50%);
+        left: -293px;
+        margin-top: -19px;
     }
 
     .slider__right-arrow {
@@ -1142,10 +1145,10 @@ main {
         height: 35px;
         width: 23px;
         float: left;
-        position: absolute;
+        position: relative;
         top: 50%;
-        left: 1278px;
-        transform: translateY(-50%);
+        left: 341px;
+        margin-top: -19px;
     }
 
     .slider__nav {
@@ -1217,7 +1220,7 @@ main {
     .updates__hidden {
         display: block;
     }
-    /* TOOLTIP */
+
     .clients__wrap {
         padding: 25px 21px 40px 36px;
         position: relative;
@@ -1375,7 +1378,7 @@ main {
         height: 434px;
         float: left;
         position: relative;
-        top: -17px;
+        top: -220px;
         margin: 0 27px 0 112px;
     }
 

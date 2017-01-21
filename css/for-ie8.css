@@ -1,0 +1,64 @@
+/*IE8 does not support double colon '::', so we putting one ':' */
+
+.clear-fix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.about {
+    background: url('../img/ForIe8/about-bg_320and480.jpg');
+}
+
+.menu:hover {
+    background: url('../img/ForIe8/hovermenu-bg.png');
+}
+
+.menu:hover .menu__link_opacity {
+    background: url('../img/ForIe8/opasity-button-bg.png')
+}
+
+.slider__item {
+    background: url('../img/ForIe8/black-nav.png');
+    height: 17px;
+    width: 17px;
+    border: 0;
+}
+
+.slider__circle {
+    width: 11px;
+    height: 11px;
+    background: url('../img/ForIe8/white-circle.png');
+    border: 0;
+}
+
+.clients__nav {
+    background: url('../img/ForIe8/white-nav.png');
+    height: 17px;
+    width: 17px;
+    border: 0;
+}
+
+.clients__nav-circle {
+    background: url('../img/ForIe8/black-circle.png');
+    height: 13px;
+    width: 14px;
+    border: 0;
+}
+
+.iphone__blue__circle {
+    background: url('../img/ForIe8/play_button.png');
+    border: 0;
+}
+
+.iphone__purple__circle {
+    display: none;
+}
+
+.iphone__pink__circle {
+    display: none;
+}
+
+.iphone__triangle {
+    display: none;
+}
