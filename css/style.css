@@ -228,6 +228,7 @@ nav {
     left: 0; right: 0;
     bottom: 0; top: 0;
     margin: auto;
+    background: -moz-linear-gradient(#fff, #e0dedf);
     background: linear-gradient(#fff, #e0dedf);
     border: 1px solid #fff;
     width: 10px;
@@ -248,6 +249,7 @@ main {
 .about {
     padding: 67px 0 43px;
     border: 1px solid #35273c;
+    background: -moz-linear-gradient(#755284, #36293d);
     background: linear-gradient(#755284, #36293d);
     box-shadow: 0 13px 10px -10px #989d9d;
 }
@@ -372,6 +374,7 @@ main {
     left: 0; right: 0;
     bottom: 0; top: 0;
     margin: auto;
+    background: -moz-linear-gradient(#8a8a8a, #464646);
     background: linear-gradient(#8a8a8a, #464646);
     border: 1px solid #6f6f6f;
     width: 12px;

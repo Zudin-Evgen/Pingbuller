@@ -5,6 +5,9 @@
     display: table;
     clear: both;
 }
+
+/*IE8 does not support gradients, so we putting images instead */
+
 .about {
     background: url('../img/ForIe8/about-bg_320and480.jpg');
 }
@@ -60,4 +63,15 @@
 
 .iphone__triangle {
     display: none;
+}
+
+/*IE8 does not support RGBA , so we putting semi-opasity png files */
+
+
+@media only screen and(min-width: 480px) {
+
+    .slider {
+        background: url('../img/semi-opasity.png');
+    }
+    
 }
