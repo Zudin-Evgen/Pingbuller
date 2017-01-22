@@ -5,7 +5,6 @@
     display: table;
     clear: both;
 }
-
 .about {
     background: url('../img/ForIe8/about-bg_320and480.jpg');
 }
@@ -61,4 +60,22 @@
 
 .iphone__triangle {
     display: none;
+<<<<<<< HEAD
+=======
+}
+
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+}
+
+@media only screen and (min-width: 960px) {
+
+
+>>>>>>> 31f0ac4a7fc66cd826e4f60281a57c9bd88598f5
 }
