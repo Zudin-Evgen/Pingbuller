@@ -1,5 +1,4 @@
 @import url('fonts.css');
-@import url('normalize.css');
 
 /*-------------------------MAIN SETTINGS---------------------------*/
 * {
@@ -163,7 +162,7 @@ nav {
     padding: 0 0 8px 10px;
 }
 
-.slider__left-arrow {
+.slider__arrow-left {
     background: url('../img/left-arrow.png') no-repeat;
     height: 33px;
     width: 23px;
@@ -173,7 +172,7 @@ nav {
     margin-top: -16px;
 }
 
-.slider__right-arrow {
+.slider__arrow-right {
     background: url('../img/right-arrow.png') no-repeat;
     height: 35px;
     width: 23px;
@@ -187,7 +186,7 @@ nav {
     display: none; /* Включать в других расширениях экрана - inline-block */
 }
 
-.slider__main-slogan {
+.slider__slogan-main {
     color: #fefefe;
     font: 36px "League Gothic Regular", Arial, sans-serif;
     text-shadow: 0 1px 1px #000;
@@ -237,7 +236,7 @@ nav {
 }
 
 /*---------------------------MAIN SECTION ----------------------------------*/
-main {
+.main {
     background: url('../img/bg-main.png') repeat;
     box-shadow: 0 13px 10px -10px #414545;
     position: relative;
@@ -300,8 +299,8 @@ main {
     font: 18px "League Gothic Regular", Arial, sans-serif;
 }
 
-.about__link_lighted {
-    text-shadow: 0 0 12px #ffffff;
+.about__link:hover {
+  text-shadow: 0 0 12px #ffffff;
 }
 /*---------------------------CLIENTS & UPDATES SECTION ----------------------------------*/
 .clients-updates-wrap {
@@ -581,7 +580,7 @@ main {
         padding-left: 8px;
     }
 
-    main {
+    .main {
         margin-top: 56px;
     }
 
@@ -732,6 +731,7 @@ main {
         float: left;
         margin-left: 52px;
         display: list-item;
+        margin-bottom: -2px;
     }
 
     .menu__item:first-child {
@@ -808,6 +808,15 @@ main {
         border-bottom: 0;
         padding: 0 0 0 0;
     }
+    .menu .menu__link:hover {
+      border-bottom: 2px solid #edbfff;
+      margin-bottom: -2px;
+    }
+    .menu .menu__link_opacity:hover {
+      border-bottom: 2px solid #edbfff;
+      margin-bottom: -2px;
+    }
+
 
     .iphone {
         display: block;
@@ -822,19 +831,19 @@ main {
     }
 
     .iphone__play {
-        position: relative;
-        left: 137px;
-        top: 108px;
+        position: absolute;
+        left: 138px;
+        top: 150px;
     }
 
-    .iphone__blue__circle {
+    .iphone__circle-blue {
         width: 76px;
         height: 76px;
         border: 12px solid rgba(148, 151, 152, 0.5);
         border-radius: 100%;
     }
 
-    .iphone__purple__circle {
+    .iphone__circle-purple {
         position: relative;
         left: -9px;
         top: -9px;
@@ -844,7 +853,7 @@ main {
         border-radius: 100%;
     }
 
-    .iphone__pink__circle {
+    .iphone__circle-pink {
         position: relative;
         left: 4px;
         top: 4px;
@@ -864,17 +873,13 @@ main {
         border-color: transparent transparent transparent #ffffff;
     }
 
-    .flash {
+    .iphone__flash {
         background: url('../img/flash.png') no-repeat;
         width: 42px;
         height: 42px;
         position: relative;
         left: 112px;
         top: 38px;
-    }
-
-    .main {
-        margin-top: 97px;
     }
 
     .slider {
@@ -897,7 +902,7 @@ main {
         line-height: 25px;
     }
 
-    .slider__main-slogan {
+    .slider__slogan-main {
         font-size: 48px;
         line-height: 45px;
     }
@@ -1004,8 +1009,13 @@ main {
     }
 
     .trademarks {
-        width: 776px;
+        width: 768px;
         padding: 13px 0 16px;
+    }
+
+    .trademarks__img {
+        margin: 13px 25px;
+        vertical-align: middle;
     }
 
     .categories {
@@ -1057,7 +1067,7 @@ main {
 @media only screen and (min-width: 960px){
 
     .header {
-        width: 965px;
+        width: 960px;
         margin: 39px auto 0;
     }
 
@@ -1077,25 +1087,33 @@ main {
 
     nav {
         width: auto;
-        margin: 32px 0 0 166px;
+        margin: 32px 0 0 155px;
         float: left;
+    }
+
+    .menu {
+      margin-left: 5px;
+    }
+
+    .menu:hover {
+      margin-left: 5px;
     }
 
     .menu .menu__link_lighted {
         padding: 0 5px 0;
-        border-bottom: 2px solid #edbfff;
     }
 
     .menu:hover .menu__link_lighted {
+        padding: 0 5px 0;
+        border-bottom: 0;
+    }
+
+    .menu .menu__link_lighted:hover {
         padding: 0 5px 0;
         border-bottom: 2px solid #edbfff;
     }
 
     .menu__item {
-        margin-left: 47px;
-    }
-
-    .menu__item_right {
         margin-left: 52px;
     }
 
@@ -1108,7 +1126,7 @@ main {
         margin-right: 47px;
     }
 
-    .slider__main-slogan {
+    .slider__slogan-main {
         font-size: 60px;
         line-height: 51px;
     }
@@ -1132,25 +1150,25 @@ main {
         margin: -126px 0 0 0;
     }
 
-    .slider__left-arrow {
+    .slider__arrow-left {
         background: url('../img/left-arrow.png') no-repeat;
         height: 33px;
         width: 23px;
         float: left;
-        position: relative;
-        top: 50%;
-        left: -293px;
+        position: absolute;
+        top: 0;
+        left: -193px;
         margin-top: -19px;
     }
 
-    .slider__right-arrow {
+    .slider__arrow-right {
         background: url('../img/right-arrow.png') no-repeat;
         height: 35px;
         width: 23px;
         float: left;
-        position: relative;
-        top: 50%;
-        left: 341px;
+        position: absolute;
+        top: 0;
+        left: 1130px;
         margin-top: -19px;
     }
 
@@ -1159,7 +1177,7 @@ main {
         padding-left: 540px;
     }
 
-    main {
+    .main {
         margin-top: 54px;
     }
 
@@ -1208,7 +1226,7 @@ main {
     }
 
     .clients-updates__container {
-        width: 962px;
+        width: 960px;
         padding-left: 20px;
     }
 
@@ -1305,9 +1323,14 @@ main {
         padding: 93px 0 32px;
     }
 
+    .categories__wrap {
+      width: 960px;
+      padding-left: 0;
+    }
+
     .categories__item {
         width: 277px;
-        margin: 0 0 59px 61px;
+        margin: 0 0 59px 59px;
     }
 
     .categories__item_right {
@@ -1326,10 +1349,6 @@ main {
 
     .categories__text_show {
         height: 166px;
-    }
-
-    .categories__wrap {
-        width: 977px
     }
 
     .hidden__header {
@@ -1382,27 +1401,27 @@ main {
         float: left;
         position: relative;
         top: -220px;
-        margin: 0 27px 0 112px;
+        margin: 0 27px 0 108px;
     }
 
-    .flash {
+    .iphone__flash {
         display: none;
     }
 
     .iphone__play {
-        position: relative;
+        position: absolute;;
         left: 137px;
         top: 149px;
     }
 
-    .iphone__blue__circle {
+    .iphone__circle-blue {
         width: 76px;
         height: 76px;
         border: 12px solid rgba(148, 151, 152, 0.5);
         border-radius: 100%;
     }
 
-    .iphone__purple__circle {
+    .iphone__circle-purple {
         position: relative;
         left: -9px;
         top: -9px;
@@ -1412,7 +1431,7 @@ main {
         border-radius: 100%;
     }
 
-    .iphone__pink__circle {
+    .iphone__circle-pink {
         position: relative;
         left: 4px;
         top: 4px;
