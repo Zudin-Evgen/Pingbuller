@@ -76,11 +76,17 @@
 }
 
 /*IE8 does not support RGBA , so we putting semi-opasity png files */
-
+/*Respond js works only with PNG files */
 
 @media only screen and(min-width: 480px) {
 
     .slider {
         background: url('../img/semi-opasity.png');
+    }
+}
+
+@media only screen and(min-width: 768px) {
+    .about {
+        background: url('../img/ForIe8/about-bg_768and960.png');
     }
 }
