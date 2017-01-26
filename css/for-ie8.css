@@ -6,6 +6,15 @@
     clear: both;
 }
 
+.logo__text:after {
+    content: '';
+    display: inline-block;
+    background: url('../img/ER-logo.png') no-repeat;
+    width: 29px;
+    height: 36px;
+    margin-left: 2px;
+}
+
 /*IE8 does not support gradients, so we putting images instead */
 
 .about {
@@ -48,16 +57,17 @@
     border: 0;
 }
 
-.iphone__blue__circle {
+.iphone__circle-blue {
     background: url('../img/ForIe8/play_button.png');
+
     border: 0;
 }
 
-.iphone__purple__circle {
+.iphone__circle-purple {
     display: none;
 }
 
-.iphone__pink__circle {
+.iphone__circle-pink {
     display: none;
 }
 
